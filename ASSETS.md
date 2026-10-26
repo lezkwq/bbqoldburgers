@@ -23,3 +23,15 @@ Para New York foi usada a mesma orientação, com indicação explícita de pres
 - `img/tennessee.webp` — 144,490 bytes.
 
 Burgers: 800 × 800 px, WebP qualidade 85. Defumado: 650 × 837 px, WebP qualidade 86. Os arquivos originais não foram sobrescritos.
+
+## Novas fotos de apoio — segunda revisão
+
+Cinco fotos reais adicionais substituem as repetições nas seções Reconhecimento e Como pedir. O cardápio mantém as fotos com identificação confirmada. Tratamento: ImageGen integrado, com orientação para preservar comida e ambiente, remover bordas de capturas e textos visíveis e melhorar ruído, nitidez natural, exposição e balanço de branco. Sem inventar ingredientes ou alterar as proporções dos produtos.
+
+Prompt: Retouch this real BBQ Old Burger’s Instagram product photograph for a restaurant website, portrait 4:5 framing. Keep the actual food identical: bun, ingredient amounts, meat layers, cheese color, sauce, vegetables, crumbs, proportions and arrangement. Preserve the real restaurant atmosphere and warm lights. Remove screenshot slivers, corner UI, image borders and visible text. Reduce noise and moderately improve natural detail, white balance and exposure. No plastic smoothing, oversaturation, invented ingredients, extra food, text, graphics or watermark.
+
+- `img/burger-brasa.webp` — 800 × 1000 px, 108,640 bytes, WebP qualidade 84.
+- `img/burger-farofa.webp` — 800 × 1000 px, 110,876 bytes, WebP qualidade 84.
+- `img/burger-camadas.webp` — 800 × 1000 px, 98,458 bytes, WebP qualidade 84.
+- `img/burger-rucula.webp` — 800 × 1000 px, 171,768 bytes, WebP qualidade 84.
+- `img/burger-cremoso.webp` — 800 × 1000 px, 130,370 bytes, WebP qualidade 84.
