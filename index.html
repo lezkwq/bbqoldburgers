@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>BBQ OLD BURGER’S | Hambúrguer na brasa em Gaspar</title>
+<meta name="description" content="Hambúrguer artesanal na brasa, costela defumada e muito sabor em Gaspar. Conheça a BBQ OLD BURGER’S e peça pelo WhatsApp.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="icon" href="data:,">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" />
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;max-width:100%;overflow-x:hidden;background:#F8F5E9;-webkit-text-size-adjust:100%}
+body{font-family:Manrope,Helvetica,Arial,sans-serif}
+img{display:block;max-width:100%}
+a{color:#201D17;text-decoration:none}
+a:hover{color:#FFC735}
+::selection{background:#FFC735;color:#211D15}
+
+h1,h2,h3{line-height:1.02!important}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+a:focus-visible{outline:3px solid #00BDB5;outline-offset:5px}
+.yellow-cta{color:#211D15!important}.yellow-cta>div{color:#211D15!important}
+header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
+.burger-card a{min-height:44px;display:flex!important;align-items:center;justify-content:center}
+.burger-card:hover{transform:translateY(-3px)}
+@media(max-width:760px){header{gap:10px!important}header>nav{display:none!important}header>a[href="#topo"]{flex:1 1 auto!important;text-align:left}header>div{flex:0 0 auto!important}#sobre>div{grid-template-columns:minmax(0,1fr)!important;gap:30px!important}#topo{padding-top:44px!important}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}.burger-card>div:last-child{padding:12px!important}.burger-card p{font-size:12px!important}.burger-card h3{font-size:14px!important}}
+@media(max-width:360px){.menu-grid{grid-template-columns:minmax(0,1fr)!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+</style>
+</helmet>
+<div style="font-family:Manrope,Helvetica,Arial,sans-serif;color:#27231B;background:#F8F5E9;overflow-x:hidden;max-width:100%;position:relative">
+
+  <header data-screen-label="Header" style="position:sticky;top:0;z-index:40;background:#201D17;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px">
+    <nav style="display:flex;gap:18px;flex:1 1 0;min-width:0">
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <a href="#sobre" style="color:#F8F5E9;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase">Sobre</a>
+      </sc-if>
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <a href="#mais-pedidos" style="color:#F8F5E9;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase">Nossos burgers</a>
+      </sc-if>
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <a href="#como-pedir" style="color:#F8F5E9;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase">Como pedir</a>
+      </sc-if>
+    </nav>
+    <a href="#topo" style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;font-size:22px;letter-spacing:.02em;line-height:1;text-transform:uppercase;flex:0 0 auto">BBQ OLD BURGER’S</a>
+    <div style="flex:1 1 0;display:flex;justify-content:flex-end;min-width:0">
+      <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border-radius:6px;transition:transform 180ms cubic-bezier(.2,.8,.2,1),background 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Pedir agora</a>
+    </div>
+  </header>
+
+  <section id="topo" data-screen-label="Hero" style="background:#201D17;padding:64px 20px 0;text-align:center">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="display:inline-block;border:1px solid rgba(255,253,247,.28);color:#FFC735;border-radius:999px;padding:6px 12px;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase">Terça a sexta · 18h às 23h · Gaspar/SC</div>
+      <h1 style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;max-width:700px;margin:22px auto 0;font-size:clamp(44px,8.4vw,82px);font-weight:400;line-height:.86;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance">Aqui o ponto<br />não é sorte.</h1>
+      <p style="max-width:440px;margin:20px auto 0;color:rgba(248,245,233,.72);font-size:14px;line-height:1.5">É brasa, cuidado e defumado de verdade. Hambúrguer artesanal feito pra surpreender na primeira mordida. E fazer você voltar pra próxima.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px">
+        <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Pedir no WhatsApp</a>
+        <a class="yellow-cta" href="#mais-pedidos" style="background:#FFF8E9;color:#201D17;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735;color:#211D15" style-active="transform:scale(.97)">Conhecer os burgers</a>
+      </div>
+    </div>
+
+    <sc-if value="{{ showStrip }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:52px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding:0 20px 40px;-webkit-overflow-scrolling:touch">
+
+        <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+          <div style="margin:0 0 12px;text-align:right;color:rgba(248,245,233,.58);font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap">Arraste para o lado para ver mais</div>
+        </sc-if>
+
+        <div style="display:flex;gap:14px;width:max-content;margin:0 auto">
+
+          <a class="yellow-cta" href="#mais-pedidos" style="width:168px;flex:0 0 auto;scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#FFC735;display:block;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-4px)">
+            <div style="aspect-ratio:1/1;overflow:hidden">
+              <img src="img/california.webp?v=20261026" alt="Burger Califórnia da BBQ OLD BURGER’S" width="800" height="800" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:11px 12px">Califórnia</div>
+          </a>
+
+          <a href="#mais-pedidos" style="width:168px;flex:0 0 auto;scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#71D1E5;display:block;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-4px)">
+            <div style="aspect-ratio:1/1;overflow:hidden">
+              <img src="img/brooklyn.webp?v=20261026" alt="Burger Brooklyn da BBQ OLD BURGER’S" width="800" height="800" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div style="font-family:Anton,Impact,sans-serif;color:#211D15;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:11px 12px">Brooklyn</div>
+          </a>
+
+          <a class="yellow-cta" href="#mais-pedidos" style="width:168px;flex:0 0 auto;scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#FFC735;display:block;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-4px)">
+            <div style="aspect-ratio:1/1;overflow:hidden">
+              <img src="img/ohio.webp?v=20261026" alt="Burger Ohio da BBQ OLD BURGER’S" width="800" height="800" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div style="font-family:Anton,Impact,sans-serif;color:#211D15;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:11px 12px">Ohio</div>
+          </a>
+
+          <a href="#mais-pedidos" style="width:168px;flex:0 0 auto;scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#FFFDF7;display:block;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-4px)">
+            <div style="aspect-ratio:1/1;overflow:hidden">
+              <img src="img/new-york.webp?v=20261026" alt="Burger New York da BBQ OLD BURGER’S" width="800" height="800" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div style="font-family:Anton,Impact,sans-serif;color:#201D17;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:11px 12px">New York</div>
+          </a>
+
+          <a href="#mais-pedidos" style="width:168px;flex:0 0 auto;scroll-snap-align:center;border-radius:10px;overflow:hidden;background:#E6D599;display:block;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-4px)">
+            <div style="aspect-ratio:1/1;overflow:hidden">
+              <img src="img/nashville.webp?v=20261026" alt="Burger Nashville da BBQ OLD BURGER’S" width="800" height="800" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div style="font-family:Anton,Impact,sans-serif;color:#211D15;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:11px 12px">Nashville</div>
+          </a>
+
+        </div>
+      </div>
+    </sc-if>
+  </section>
+
+  <section id="sobre" data-screen-label="Sobre" style="background:#F8F5E9;padding:88px 20px">
+    <div style="width:min(1120px,100%);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center">
+      <div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8D7D70">Sobre a casa</div>
+
+        <h2 style="font-family:Anton,Impact,sans-serif;margin:10px 0 0;font-size:clamp(32px,5.2vw,48px);font-weight:400;line-height:.9;letter-spacing:-.03em;text-transform:uppercase;color:#27231B">Brasa acesa.<br />Defumado de verdade.<br />Feito com carinho.</h2>
+
+        <p style="margin:20px 0 0;max-width:460px;font-size:15px;line-height:1.6;color:#5c4a44;text-wrap:pretty">O sabor começa muito antes da montagem. Na carne preparada com cuidado, na costela defumada e no burger que vai pra brasa. Por aqui, ingrediente selecionado e atendimento de perto fazem parte de cada pedido. Vem comer com a gente, como quem chega no quintal de um amigo.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:32px">
+
+          <div style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:9px;padding:18px 16px">
+            <div style="font-family:Anton,Impact,sans-serif;font-size:20px;color:#201D17;text-transform:uppercase;line-height:1">Delivery</div>
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.45;color:#8D7D70">Peça no WhatsApp e consulte a entrega no seu endereço.</p>
+          </div>
+
+          <div style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:9px;padding:18px 16px">
+            <div style="font-family:Anton,Impact,sans-serif;font-size:20px;color:#201D17;text-transform:uppercase;line-height:1">Retirada</div>
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.45;color:#8D7D70">Combina o horário pelo WhatsApp e leva ainda quentinho.</p>
+          </div>
+
+          <div style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:9px;padding:18px 16px">
+            <div style="font-family:Anton,Impact,sans-serif;font-size:20px;color:#201D17;text-transform:uppercase;line-height:1">No local</div>
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.45;color:#8D7D70">Seu lugar na Figueira, em Gaspar. Chega mais!</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+        <img src="img/defumado.webp?v=20261026" alt="Costela defumada real da BBQ OLD BURGER’S, preparada com cuidado" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+      </div>
+
+    </div>
+  </section>
+
+  <section id="mais-pedidos" data-screen-label="Mais pedidos" style="background:#F8F5E9;padding:0 20px 96px;text-align:center">
+    <div style="width:min(1120px,100%);margin:0 auto">
+
+      <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8D7D70">Nossos burgers</div>
+
+      <h2 style="font-family:Anton,Impact,sans-serif;margin:10px 0 0;font-size:clamp(32px,5.2vw,48px);font-weight:400;line-height:.9;letter-spacing:-.03em;text-transform:uppercase;color:#27231B">Escolhe o seu próximo favorito</h2>
+
+      <p style="margin:12px auto 0;max-width:400px;font-size:13px;line-height:1.5;color:#8D7D70">Da brasa pro pão. Cada burger tem sua personalidade. Todos acompanham batatas rústicas.</p>
+
+      <div class="menu-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:18px;margin-top:44px;text-align:left">
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/california.webp?v=20261026" alt="Califórnia, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Califórnia</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Brioche, burger de 200 g na brasa, costela defumada desfiada, cheddar melted, rúcula, tomates salteados, picles, crispy de cebola, maionese da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Calif%C3%B3rnia.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Califórnia pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/brooklyn.webp?v=20261026" alt="Brooklyn, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Brooklyn</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">O queridinho: brioche, burger de 200 g na brasa, cheddar em fatias, bacon, maionese especial da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Brooklyn.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Brooklyn pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/ohio.webp?v=20261026" alt="Ohio, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Ohio</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Pão leve e macio, burger de 200 g na brasa, costela defumada desfiada, cheddar melted, bacon em fatias, broto, maionese da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Ohio.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Ohio pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/new-york.webp?v=20261026" alt="New York, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">New York</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Pão leve e macio, burger de 200 g na brasa, copa lombo defumada, mussarela melted, broto, tomates-cereja salteados, farofa de bacon, maionese da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20New%20York.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir New York pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/oklahoma.webp?v=20261026" alt="Oklahoma, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Oklahoma</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Pão leve e macio, três carnes de 100 g na brasa intercaladas com cheddar, linguiça Blumenau, maionese especial da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Oklahoma.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Oklahoma pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/new-jersey.webp?v=20261026" alt="New Jersey, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">New Jersey</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Pão leve e macio, burger de 200 g na brasa, cheddar, bacon, alface, tomate, cebola roxa, picles, maionese da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20New%20Jersey.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir New Jersey pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/nashville.webp?v=20261026" alt="Nashville, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Nashville</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Brioche, três carnes de 100 g na brasa intercaladas com cheddar, bacon em fatias, maionese especial da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Nashville.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Nashville pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+
+        <article class="burger-card" style="background:#FFFDF7;border:1px solid rgba(80,30,20,.08);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 180ms cubic-bezier(.2,.8,.2,1)" style-hover="transform:translateY(-3px)">
+          <div style="aspect-ratio:1/1;overflow:hidden"><img src="img/tennessee.webp?v=20261026" alt="Tennessee, hambúrguer artesanal da BBQ OLD BURGER’S" width="800" height="800" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="padding:16px;display:flex;flex-direction:column;flex:1">
+            <h3 style="margin:0;font-size:16px;font-weight:800;text-transform:uppercase;color:#27231B">Tennessee</h3>
+            <p style="margin:8px 0 18px;font-size:13px;line-height:1.6;color:#5c4a44">Brioche, burger de 200 g na brasa, cheddar melted, molho pesto, cebola roxa, tomate grelhado, alface, farofa de bacon, maionese da casa e ketchup.</p>
+            <a href="https://wa.me/5547988598050?text=Oi%2C%20BBQ%21%20Vim%20pelo%20site%20e%20quero%20pedir%20o%20Tennessee.%20Pode%20me%20passar%20o%20valor%3F" target="_blank" rel="noopener" aria-label="Pedir Tennessee pelo WhatsApp" style="margin-top:auto;display:block;text-align:center;background:#201D17;color:#FFFDF7;border-radius:6px;padding:12px;font-size:12px;font-weight:800">Quero esse burger ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:36px">
+        <a href="{{ waMenuHref }}" target="_blank" rel="noopener" style="display:inline-block;border:1px solid #201D17;color:#201D17;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:12px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#201D17;color:#FFFDF7" style-active="transform:scale(.97)">Pedir o cardápio completo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section data-screen-label="Reconhecimento" style="background:#F1EEDF;padding:88px 20px">
+    <div style="width:min(1120px,100%);margin:0 auto">
+
+      <div style="text-align:center">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8D7D70">Reconhecimento</div>
+
+        <h2 style="font-family:Anton,Impact,sans-serif;margin:10px 0 0;font-size:clamp(32px,5.2vw,48px);font-weight:400;line-height:.9;letter-spacing:-.03em;text-transform:uppercase;color:#27231B">Nota cheia no Google</h2>
+
+        <p style="margin:12px auto 0;max-width:400px;font-size:13px;line-height:1.5;color:#8D7D70">Sabor que marca. Atendimento que faz voltar. Avaliação de quem já sentou à nossa mesa.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px">
+
+        <div class="yellow-cta" style="background:#FFC735;border-radius:10px;padding:28px 20px;text-align:center">
+          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;color:#FFFDF7">5,0</div>
+          <div style="margin-top:8px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,253,247,.85)">Nota no Google</div>
+        </div>
+
+        <div style="background:#71D1E5;border-radius:10px;padding:28px 20px;text-align:center">
+          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;color:#211D15">104</div>
+          <div style="margin-top:8px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(22,20,15,.7)">Avaliações</div>
+        </div>
+
+        <div class="yellow-cta" style="background:#FFC735;border-radius:10px;padding:28px 20px;text-align:center">
+          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;color:#211D15">18h</div>
+          <div style="margin-top:8px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(22,20,15,.7)">A brasa chama · ter a sex</div>
+        </div>
+
+        <div style="background:#E6D599;border-radius:10px;padding:28px 20px;text-align:center">
+          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;color:#211D15">23h</div>
+          <div style="margin-top:8px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(22,20,15,.7)">Encerramos · ter a sex</div>
+        </div>
+
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px">
+
+        <div style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+          <img src="img/nashville.webp?v=20261026" alt="Nashville com três carnes, cheddar e bacon" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+
+          <div style="position:absolute;left:0;right:0;bottom:0;background:rgba(22,20,15,.62);padding:18px 20px">
+            <div style="font-family:Anton,Impact,sans-serif;font-size:clamp(20px,3vw,28px);line-height:.92;text-transform:uppercase;color:#FFFDF7">Três carnes na brasa.<br />Bacon sem miséria.</div>
+          </div>
+        </div>
+
+        <div style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+          <img src="img/california.webp?v=20261026" alt="Califórnia com costela defumada e batatas rústicas" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="como-pedir" data-screen-label="Como pedir" style="background:#F8F5E9;padding:88px 20px">
+    <div style="width:min(1120px,100%);margin:0 auto">
+
+      <div style="text-align:center">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8D7D70">Como pedir</div>
+
+        <h2 style="font-family:Anton,Impact,sans-serif;margin:10px 0 0;font-size:clamp(32px,5.2vw,48px);font-weight:400;line-height:.9;letter-spacing:-.03em;text-transform:uppercase;color:#27231B">Três passos e pronto</h2>
+
+        <p style="margin:12px auto 0;max-width:400px;font-size:13px;line-height:1.5;color:#8D7D70">Sem cadastro, sem senha, sem app novo no celular.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:44px">
+
+        <div style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+          <img src="img/new-jersey.webp?v=20261026" alt="New Jersey com bacon, salada e cheddar" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+
+          <div style="position:absolute;inset:0;background:rgba(22,20,15,.34)"></div>
+
+          <div style="position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;justify-content:space-between">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#FFC735">Passo 01</div>
+
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,253,247,.85)">Bate o olho no cardápio</div>
+              <div style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,5vw,46px);line-height:.88;text-transform:uppercase;color:#FFC735;margin-top:6px">Escolhe</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+          <img src="img/california.webp?v=20261026" alt="Califórnia com costela defumada e batatas rústicas" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+
+          <div style="position:absolute;inset:0;background:rgba(22,20,15,.34)"></div>
+
+          <div style="position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;justify-content:space-between">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#71D1E5">Passo 02</div>
+
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,253,247,.85)">Manda no zap o que quer</div>
+              <div style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,5vw,46px);line-height:.88;text-transform:uppercase;color:#71D1E5;margin-top:6px">Pede</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5">
+          <img src="img/brooklyn.webp?v=20261026" alt="Brooklyn na brasa, com cheddar e bacon" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" />
+
+          <div style="position:absolute;inset:0;background:rgba(22,20,15,.34)"></div>
+
+          <div style="position:absolute;inset:0;padding:22px;display:flex;flex-direction:column;justify-content:space-between">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#E6D599">Passo 03</div>
+
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,253,247,.85)">Guardanapo na mão</div>
+              <div style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,5vw,46px);line-height:.88;text-transform:uppercase;color:#E6D599;margin-top:6px">Come</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="background:#201D17;border-radius:14px;margin-top:18px;padding:36px 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center">
+
+        <div>
+          <h3 style="font-family:Anton,Impact,sans-serif;margin:0;font-size:clamp(26px,4vw,38px);line-height:.9;letter-spacing:-.03em;text-transform:uppercase;color:#FFFDF7">Seu próximo burger<br />começa no zap.</h3>
+
+          <p style="margin:12px 0 0;max-width:420px;font-size:13px;line-height:1.5;color:rgba(248,245,233,.72)">Escolheu o seu? Chama a BBQ, confira os valores e combine entrega, retirada ou uma mesa por aqui.</p>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-self:end">
+          <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Fazer meu pedido</a>
+
+          <a class="yellow-cta" href="{{ waMenuHref }}" target="_blank" rel="noopener" style="background:#FFF8E9;color:#201D17;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735;color:#211D15" style-active="transform:scale(.97)">Receber o cardápio</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer data-screen-label="Rodapé" style="background:#12110E;padding:72px 20px 40px">
+    <div style="width:min(1120px,100%);margin:0 auto">
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px">
+
+        <div>
+          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;text-transform:uppercase;color:#FFFDF7">BBQ OLD BURGER’S</div>
+
+          <p style="margin:12px 0 0;max-width:280px;font-size:12px;line-height:1.55;color:rgba(248,245,233,.6)">Hambúrguer artesanal na brasa e defumados em Gaspar, Santa Catarina. Feito com carinho. Servido com sabor.</p>
+        </div>
+
+        <div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#FFC735">Onde estamos</div>
+
+          <p style="margin:10px 0 0;font-size:13px;line-height:1.6;color:#F8F5E9">Rua Guilherme Sabel, 312<br />Figueira, Gaspar, SC<br />89110-520<br /><a href="https://www.google.com/maps/search/?api=1&amp;query=BBQ+OLD+BURGERS+Rua+Guilherme+Sabel+312+Gaspar+SC" target="_blank" rel="noopener" style="color:#FFC735;text-decoration:underline">Como chegar ↗</a></p>
+        </div>
+
+        <div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#FFC735">Horário</div>
+
+          <p style="margin:10px 0 0;font-size:13px;line-height:1.6;color:#F8F5E9">Terça a sexta · 18:00 às 23:00<br />Segunda, sábado e domingo: fechado</p>
+        </div>
+
+        <div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#FFC735">Fala com a gente</div>
+
+          <p style="margin:12px 0;font-size:13px;line-height:1.8"><a href="tel:+5547988598050" style="color:#FFFDF7">(47) 98859-8050</a><br /><a href="https://www.instagram.com/bbq_old_burgers/" target="_blank" rel="noopener" style="color:#FFFDF7">@bbq_old_burgers</a></p><div style="display:flex;gap:10px;margin-top:12px">
+
+            <a class="yellow-cta" href="{{ waHref }}" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp" title="WhatsApp" style="width:42px;height:42px;border-radius:9px;background:#201D17;display:flex;align-items:center;justify-content:center;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFDF7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3.5 20.5l1.6-4.5A8.4 8.4 0 1 1 20.5 11.6Z"></path>
+                <path d="M9.2 8.4c.3-.1.6 0 .8.3l.8 1.3c.2.3.1.6-.1.8l-.5.5c.5 1 1.3 1.8 2.3 2.3l.5-.5c.2-.2.5-.3.8-.1l1.3.8c.3.2.4.5.3.8-.3.8-1.1 1.3-2 1.2a7.3 7.3 0 0 1-6-6c-.1-.9.4-1.7 1.2-2Z"></path>
+              </svg>
+            </a>
+
+            <a class="yellow-cta" href="https://www.instagram.com/bbq_old_burgers/" target="_blank" rel="noopener" aria-label="Instagram da BBQ OLD BURGER’S" title="Instagram" style="width:42px;height:42px;border-radius:9px;background:#201D17;display:flex;align-items:center;justify-content:center;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFDF7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17" cy="7" r="1.1" fill="#FFFDF7" stroke="none"></circle>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:48px;padding-top:20px;border-top:1px solid rgba(248,245,233,.12);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between">
+        <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(248,245,233,.4)">BBQ OLD BURGER’S Gaspar</span>
+        <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(248,245,233,.4)">Site demonstrativo por Tessura</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:60;background:#201D17;padding:10px 14px;display:flex;gap:10px;align-items:center;border-top:1px solid rgba(248,245,233,.14)">
+
+      <a class="yellow-cta" href="{{ waHref }}" target="_blank" rel="noopener" style="flex:1 1 auto;background:#FFC735;color:#FFFDF7;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:15px 16px;border-radius:6px;text-align:center" style-active="transform:scale(.98)">Pedir no WhatsApp</a>
+
+      <a class="yellow-cta" href="tel:+5547988598050" aria-label="Ligar para a BBQ OLD BURGER’S" style="width:48px;height:48px;flex:0 0 auto;background:#FFC735;border-radius:6px;display:flex;align-items:center;justify-content:center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#211D15" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8.2 4h-3a1.2 1.2 0 0 0-1.2 1.3 15 15 0 0 0 14.7 14.7A1.2 1.2 0 0 0 20 18.8v-3l-4-1.4-1.9 1.9a11.6 11.6 0 0 1-4.6-4.6L11.4 10Z"></path>
+        </svg>
+      </a>
+
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+    <div style="height:76px"></div>
+  </sc-if>
+
+</div>
+</x-dc>
+
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappMessage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Oi! Vim pelo site da BBQ OLD BURGER’S e quero fazer um pedido.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Pedido&quot;},&quot;showAddButtons&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Vitrine&quot;},&quot;showCategoryStrip&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Vitrine&quot;}}">
+class Component extends DCLogic {
+  state = { mobile: false };
+
+  componentDidMount() {
+    document.title = 'BBQ OLD BURGER’S | Hambúrguer na brasa em Gaspar';
+
+    const setMeta = (name, content) => {
+      let m = document.head.querySelector('meta[name="' + name + '"]');
+
+      if (!m) {
+        m = document.createElement('meta');
+        m.setAttribute('name', name);
+        document.head.appendChild(m);
+      }
+
+      m.setAttribute('content', content);
+    };
+
+    setMeta('viewport', 'width=device-width, initial-scale=1');
+
+    setMeta(
+      'description',
+      'Hambúrguer artesanal na brasa, costela defumada e muito sabor em Gaspar. Conheça a BBQ OLD BURGER’S e peça pelo WhatsApp.'
+    );
+
+    if (!document.getElementById('ld-bbq-old-burgers')) {
+      const s = document.createElement('script');
+
+      s.type = 'application/ld+json';
+      s.id = 'ld-bbq-old-burgers';
+
+      s.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FastFoodRestaurant',
+        name: 'BBQ OLD BURGER’S',
+        description: 'Hamburgueria artesanal com burgers na brasa e defumados em Gaspar, SC.',
+        servesCuisine: ['Hamburgueria', 'Churrasco'],
+        priceRange: 'R$ 40–60',
+        telephone: '+55 47 98859-8050',
+
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Rua Guilherme Sabel, 312 - Figueira',
+          addressLocality: 'Gaspar',
+          addressRegion: 'SC',
+          postalCode: '89110-520',
+          addressCountry: 'BR'
+        },
+
+        openingHoursSpecification: [{
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '18:00',
+          closes: '23:00'
+        }],
+
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5',
+          reviewCount: '104',
+          bestRating: '5'
+        },
+
+        sameAs: [
+          'https://www.instagram.com/bbq_old_burgers/'
+        ]
+      });
+
+      document.head.appendChild(s);
+    }
+
+    this._mq = window.matchMedia('(max-width: 760px)');
+
+    this._onMq = () => this.setState({
+      mobile: this._mq.matches
+    });
+
+    this._onMq();
+
+    if (this._mq.addEventListener) {
+      this._mq.addEventListener('change', this._onMq);
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._mq && this._mq.removeEventListener) {
+      this._mq.removeEventListener('change', this._onMq);
+    }
+  }
+
+  wa(text) {
+    return 'https://wa.me/5547988598050?text=' + encodeURIComponent(text);
+  }
+
+  renderVals() {
+    const msg =
+      this.props.whatsappMessage ??
+      'Oi! Vim pelo site da BBQ OLD BURGER’S e quero fazer um pedido.';
+
+    return {
+      mobile: this.state.mobile,
+      showNav: !this.state.mobile,
+      showAdd: this.props.showAddButtons ?? true,
+      showStrip: this.props.showCategoryStrip ?? true,
+      waHref: this.wa(msg),
+      waMenuHref: this.wa('Oi, BBQ! Vim pelo site e quero receber o cardápio completo com os valores.')
+    };
+  }
+}
+</script>
+
+</body>
+</html>
