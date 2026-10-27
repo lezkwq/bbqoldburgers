@@ -35,3 +35,9 @@ Prompt: Retouch this real BBQ Old Burger’s Instagram product photograph for a 
 - `img/burger-camadas.webp` — 800 × 1000 px, 98,458 bytes, WebP qualidade 84.
 - `img/burger-rucula.webp` — 800 × 1000 px, 171,768 bytes, WebP qualidade 84.
 - `img/burger-cremoso.webp` — 800 × 1000 px, 130,370 bytes, WebP qualidade 84.
+
+## Identidade visual
+
+Logo original do perfil do Instagram fornecida pelo cliente. Apenas exportada em tamanhos menores para o cabeçalho/rodapé (WebP), favicon ICO/PNG e Apple touch icon; sem redesenho ou alteração da marca. O recorte circular no site é aplicado via CSS.
+
+Ícone do WhatsApp: SVG da biblioteca Bootstrap Icons, com proporções originais e preenchimento pela cor do botão. Fonte e licença em THIRD_PARTY_NOTICES.md.

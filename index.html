@@ -6,7 +6,9 @@
 <meta name="description" content="Hambúrguer artesanal na brasa, costela defumada e muito sabor em Gaspar. Conheça a BBQ OLD BURGER’S e peça pelo WhatsApp.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
-<link rel="icon" href="data:,">
+<link rel="icon" href="favicon.ico?v=2" type="image/x-icon" sizes="16x16 32x32 48x48 64x64">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 <body>
 <x-dc>
@@ -34,6 +36,19 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
 @media(max-width:360px){.menu-grid{grid-template-columns:minmax(0,1fr)!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
+
+.brand-lockup{display:flex;align-items:center;gap:10px;min-width:0}
+.brand-logo{width:48px;height:48px;border-radius:50%;object-fit:contain;flex:0 0 auto}
+.brand-lockup>span{min-width:0}
+.footer-brand{gap:12px}
+.footer-brand .brand-logo{width:56px;height:56px}
+.whatsapp-icon{display:block;flex:0 0 auto;fill:currentColor;stroke:none}
+.whatsapp-button{display:inline-flex!important;align-items:center;justify-content:center;gap:8px}
+.whatsapp-social{color:#FFFDF7!important}
+.whatsapp-social:hover{color:#211D15!important;background:#FFC735!important}
+@media(max-width:760px){header .brand-lockup{gap:7px}header .brand-logo{width:34px;height:34px}header a[href="#topo"]{font-size:clamp(12px,3.3vw,17px)!important}header .whatsapp-button{padding:11px 12px!important;gap:6px}header .whatsapp-icon{width:17px;height:17px}}
+@media(max-width:360px){header{padding-left:12px!important;padding-right:12px!important;gap:6px!important}header .brand-logo{width:30px;height:30px}header .whatsapp-button{font-size:9px!important;padding:10px!important}}
+
 </style>
 </helmet>
 <div style="font-family:Manrope,Helvetica,Arial,sans-serif;color:#27231B;background:#F8F5E9;overflow-x:hidden;max-width:100%;position:relative">
@@ -50,9 +65,11 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
         <a href="#como-pedir" style="color:#F8F5E9;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase">Como pedir</a>
       </sc-if>
     </nav>
-    <a href="#topo" style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;font-size:22px;letter-spacing:.02em;line-height:1;text-transform:uppercase;flex:0 0 auto">BBQ OLD BURGER’S</a>
+    <a class="brand-lockup" href="#topo" style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;font-size:22px;letter-spacing:.02em;line-height:1;text-transform:uppercase;flex:0 0 auto"><img class="brand-logo" src="img/logo-bbq.webp" alt="" width="48" height="48" decoding="async" /><span>BBQ OLD BURGER’S</span></a>
     <div style="flex:1 1 0;display:flex;justify-content:flex-end;min-width:0">
-      <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border-radius:6px;transition:transform 180ms cubic-bezier(.2,.8,.2,1),background 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Pedir agora</a>
+      <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta whatsapp-button" style="background:#FFC735;color:#FFFDF7;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border-radius:6px;transition:transform 180ms cubic-bezier(.2,.8,.2,1),background 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg><span>Pedir agora</span></a>
     </div>
   </header>
 
@@ -62,7 +79,9 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
       <h1 style="font-family:Anton,Impact,sans-serif;color:#FFFDF7;max-width:700px;margin:22px auto 0;font-size:clamp(44px,8.4vw,82px);font-weight:400;line-height:.86;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance">Aqui o ponto<br />não é sorte.</h1>
       <p style="max-width:440px;margin:20px auto 0;color:rgba(248,245,233,.72);font-size:14px;line-height:1.5">É brasa, cuidado e defumado de verdade. Hambúrguer artesanal feito pra surpreender na primeira mordida. E fazer você voltar pra próxima.</p>
       <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px">
-        <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Pedir no WhatsApp</a>
+        <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta whatsapp-button" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg><span>Pedir no WhatsApp</span></a>
         <a class="yellow-cta" href="#mais-pedidos" style="background:#FFF8E9;color:#201D17;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735;color:#211D15" style-active="transform:scale(.97)">Conhecer os burgers</a>
       </div>
     </div>
@@ -365,7 +384,9 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
         </div>
 
         <div style="display:flex;flex-wrap:wrap;gap:10px;justify-self:end">
-          <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)">Fazer meu pedido</a>
+          <a href="{{ waHref }}" target="_blank" rel="noopener" class="yellow-cta whatsapp-button" style="background:#FFC735;color:#FFFDF7;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#E9AE12;color:#FFFDF7" style-active="transform:scale(.97)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg><span>Fazer meu pedido</span></a>
 
           <a class="yellow-cta" href="{{ waMenuHref }}" target="_blank" rel="noopener" style="background:#FFF8E9;color:#201D17;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:13px 20px;border-radius:6px;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735;color:#211D15" style-active="transform:scale(.97)">Receber o cardápio</a>
         </div>
@@ -380,7 +401,7 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px">
 
         <div>
-          <div style="font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1;text-transform:uppercase;color:#FFFDF7">BBQ OLD BURGER’S</div>
+          <div class="brand-lockup footer-brand" style="font-family:Anton,Impact,sans-serif;font-size:26px;line-height:1;text-transform:uppercase;color:#FFFDF7"><img class="brand-logo" src="img/logo-bbq.webp" alt="" width="48" height="48" decoding="async" /><span>BBQ OLD BURGER’S</span></div>
 
           <p style="margin:12px 0 0;max-width:280px;font-size:12px;line-height:1.55;color:rgba(248,245,233,.6)">Hambúrguer artesanal na brasa e defumados em Gaspar, Santa Catarina. Feito com carinho. Servido com sabor.</p>
         </div>
@@ -402,11 +423,9 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
 
           <p style="margin:12px 0;font-size:13px;line-height:1.8"><a href="tel:+5547988598050" style="color:#FFFDF7">(47) 98859-8050</a><br /><a href="https://www.instagram.com/bbq_old_burgers/" target="_blank" rel="noopener" style="color:#FFFDF7">@bbq_old_burgers</a></p><div style="display:flex;gap:10px;margin-top:12px">
 
-            <a class="yellow-cta" href="{{ waHref }}" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp" title="WhatsApp" style="width:42px;height:42px;border-radius:9px;background:#201D17;display:flex;align-items:center;justify-content:center;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFDF7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3.5 20.5l1.6-4.5A8.4 8.4 0 1 1 20.5 11.6Z"></path>
-                <path d="M9.2 8.4c.3-.1.6 0 .8.3l.8 1.3c.2.3.1.6-.1.8l-.5.5c.5 1 1.3 1.8 2.3 2.3l.5-.5c.2-.2.5-.3.8-.1l1.3.8c.3.2.4.5.3.8-.3.8-1.1 1.3-2 1.2a7.3 7.3 0 0 1-6-6c-.1-.9.4-1.7 1.2-2Z"></path>
-              </svg>
+            <a class="whatsapp-social" href="{{ waHref }}" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp" title="WhatsApp" style="width:42px;height:42px;border-radius:9px;background:#201D17;display:flex;align-items:center;justify-content:center;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
             </a>
 
             <a class="yellow-cta" href="https://www.instagram.com/bbq_old_burgers/" target="_blank" rel="noopener" aria-label="Instagram da BBQ OLD BURGER’S" title="Instagram" style="width:42px;height:42px;border-radius:9px;background:#201D17;display:flex;align-items:center;justify-content:center;transition:all 180ms cubic-bezier(.2,.8,.2,1)" style-hover="background:#FFC735">
@@ -432,7 +451,9 @@ header a[href="#topo"]{font-size:clamp(13px,2vw,22px)!important}
   <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed;left:0;right:0;bottom:0;z-index:60;background:#201D17;padding:10px 14px;display:flex;gap:10px;align-items:center;border-top:1px solid rgba(248,245,233,.14)">
 
-      <a class="yellow-cta" href="{{ waHref }}" target="_blank" rel="noopener" style="flex:1 1 auto;background:#FFC735;color:#FFFDF7;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:15px 16px;border-radius:6px;text-align:center" style-active="transform:scale(.98)">Pedir no WhatsApp</a>
+      <a class="yellow-cta whatsapp-button" href="{{ waHref }}" target="_blank" rel="noopener" style="flex:1 1 auto;background:#FFC735;color:#FFFDF7;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:15px 16px;border-radius:6px;text-align:center" style-active="transform:scale(.98)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="whatsapp-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg><span>Pedir no WhatsApp</span></a>
 
       <a class="yellow-cta" href="tel:+5547988598050" aria-label="Ligar para a BBQ OLD BURGER’S" style="width:48px;height:48px;flex:0 0 auto;background:#FFC735;border-radius:6px;display:flex;align-items:center;justify-content:center">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#211D15" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
